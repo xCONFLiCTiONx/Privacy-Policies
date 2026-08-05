@@ -1,0 +1,26 @@
+# IDEs and Editors
+.idea/
+.vscode/
+.vs/
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Project Specific
+.artifacts/
+node_modules/
+*.log
+
+# Build and Temp
+dist/
+build/
+out/
+
+# Examination Files (Local only)
+EXAM/

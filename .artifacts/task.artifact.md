@@ -1,5 +1,0 @@
-- [x] Create `weather-watcher.md`
-- [x] Update `bookmarks.md`
-- [x] Update `pip.md`
-- [x] Update `README.md`
-- [x] Verify all final changes
