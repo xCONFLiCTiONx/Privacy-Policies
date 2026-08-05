@@ -2,7 +2,7 @@
 
 This repository contains the privacy policies for various applications and browser extensions.
 
-## Available Policies
+## Policies
 
 | Application / Extension | Description |
 | :--- | :--- |
