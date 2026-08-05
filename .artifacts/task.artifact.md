@@ -1,0 +1,8 @@
+- [x] Create `portfolio.md`
+- [x] Create `social-post-scheduler.md`
+- [x] Create `autolock.md`
+- [x] Create `easylogger.md`
+- [x] Create `stickypad.md`
+- [x] Create `xmenutools.md`
+- [x] Update `README.md`
+- [x] Verify formatting and links
