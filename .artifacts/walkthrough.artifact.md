@@ -1,24 +1,32 @@
-# Walkthrough - Privacy Policies for All Projects
+# Walkthrough - Final Privacy Policy Updates
 
-I have generated privacy policies for the remaining projects listed on your GitHub profile and updated the repository overview.
+I have completed the final set of updates based on a comprehensive review of all projects in the `EXAM` directory.
 
 ## Changes Made
 
-### Privacy Policies
-Generated the following new policy documents based on project descriptions:
-- **[portfolio.md](file:///F:/Repositories/Privacy-Policies/portfolio.md)**: Covers GitHub API usage and local processing.
-- **[social-post-scheduler.md](file:///F:/Repositories/Privacy-Policies/social-post-scheduler.md)**: Covers OAuth authentication and data usage for scheduling.
-- **[autolock.md](file:///F:/Repositories/Privacy-Policies/autolock.md)**: Covers local session management.
-- **[easylogger.md](file:///F:/Repositories/Privacy-Policies/easylogger.md)**: Covers developer-configured logging destinations.
-- **[stickypad.md](file:///F:/Repositories/Privacy-Policies/stickypad.md)**: Covers local note storage.
-- **[xmenutools.md](file:///F:/Repositories/Privacy-Policies/xmenutools.md)**: Covers local system modifications for the archived suite.
+### New Privacy Policies
+- **[weather-watcher.md](file:///F:/Repositories/Privacy-Policies/weather-watcher.md)**:
+    - Discloses the use of **Precise and Background Location**.
+    - Lists third-party APIs used (**NWS, Open-Meteo, ArcGIS**).
+    - Clarifies that location coordinates are sent to these APIs to fetch weather data.
+
+### Updated Privacy Policies
+- **[bookmarks.md](file:///F:/Repositories/Privacy-Policies/bookmarks.md)**:
+    - Added disclosure for the **History** permission used for "Recently Viewed" items.
+    - Mentioned the use of **Google's Favicon service** for displaying site icons.
+- **[pip.md](file:///F:/Repositories/Privacy-Policies/pip.md)**:
+    - Renamed to **Universal Auto PiP**.
+    - Updated description to reflect automatic media detection and PiP automation.
 
 ### Repository Overview
-- **[README.md](file:///F:/Repositories/Privacy-Policies/README.md)**: Updated the "Available Policies" table to include all 15 projects, sorted alphabetically.
+- **[README.md](file:///F:/Repositories/Privacy-Policies/README.md)**:
+    - Added **Weather Watcher**.
+    - Updated **Universal Auto PiP** entry.
+    - Verified alphabetical sorting.
 
 ## Verification Results
 
 ### Manual Verification
-- Checked all new Markdown files for consistent headers and formatting.
-- Verified that all links in the `README.md` correctly point to their respective policy files.
-- Confirmed project descriptions in `README.md` align with the information fetched from GitHub.
+- Confirmed that all project-specific permissions (like `ACCESS_BACKGROUND_LOCATION` for Weather Watcher) are correctly documented.
+- Verified that all external API integrations seen in the code are disclosed in their respective policies.
+- Checked that the `README.md` links are up-to-date and functional.

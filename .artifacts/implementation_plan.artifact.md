@@ -1,46 +1,40 @@
-# Implementation Plan - Generate Privacy Policies for Remaining Projects
+# Implementation Plan - Additional Privacy Policy Updates
 
-The goal is to create privacy policies for all projects listed on the user's GitHub profile that are currently missing from the `Privacy-Policies` repository.
+After a second thorough pass of the `EXAM` directory, I've identified one missing policy and two existing ones that need refinements to accurately reflect current functionality.
 
 ## Proposed Changes
 
-### [New Privacy Policies]
+### [New Privacy Policy]
 
-I will create the following new Markdown files in the root directory:
+#### [NEW] [weather-watcher.md](file:///F:/Repositories/Privacy-Policies/weather-watcher.md)
+*   **Purpose:** Covers the "Weather Watcher" Android app.
+*   **Key points:**
+    *   **Location Data:** Explicitly mentions the use of `ACCESS_FINE_LOCATION` and `ACCESS_BACKGROUND_LOCATION` to provide weather for the user's current area.
+    *   **Third-Party APIs:** Discloses that location coordinates are sent to external services (National Weather Service, ArcGIS, and Open-Meteo) to fetch meteorological data.
+    *   **Notifications:** Mentions the use of background location for weather alerts.
 
-#### [NEW] [portfolio.md](file:///F:/Repositories/Privacy-Policies/portfolio.md)
-*   **Purpose:** Covers the dynamic portfolio template.
-*   **Key points:** Mentions GitHub API usage for fetching profile/repo data, local processing, and no server-side storage of user data.
+---
 
-#### [NEW] [social-post-scheduler.md](file:///F:/Repositories/Privacy-Policies/social-post-scheduler.md)
-*   **Purpose:** Covers the Facebook and Twitter scheduling tool.
-*   **Key points:** Mentions OAuth authentication, handling of access tokens, and that data is only used to facilitate scheduled posting as requested by the user.
+### [Updated Privacy Policies]
 
-#### [NEW] [autolock.md](file:///F:/Repositories/Privacy-Policies/autolock.md)
-*   **Purpose:** Covers the computer session time limit tool.
-*   **Key points:** Focuses on local session management and the absence of data collection or transmission.
+#### [MODIFY] [bookmarks.md](file:///F:/Repositories/Privacy-Policies/bookmarks.md)
+*   **Update:** Add a section on **Recently Viewed** items.
+*   **Detail:** Mention that the extension accesses your browser history (`history` permission) to display recently visited sites locally.
+*   **External Requests:** Disclose that website domains are sent to Google's Favicon service (`www.google.com/s2/favicons`) to display icons in the dashboard.
 
-#### [NEW] [easylogger.md](file:///F:/Repositories/Privacy-Policies/easylogger.md)
-*   **Purpose:** Covers the .NET logging library.
-*   **Key points:** Clarifies that as a library, it writes logs to the location specified by the developer/user and does not transmit data externally.
-
-#### [NEW] [stickypad.md](file:///F:/Repositories/Privacy-Policies/stickypad.md)
-*   **Purpose:** Covers the Windows desktop notes app.
-*   **Key points:** Notes that content is stored locally on the device and not synced or uploaded.
-
-#### [NEW] [xmenutools.md](file:///F:/Repositories/Privacy-Policies/xmenutools.md)
-*   **Purpose:** Covers the archived extended context menu tools.
-*   **Key points:** Similar to XtendedMenu, focusing on local registry/system modifications without data harvesting.
+#### [MODIFY] [pip.md](file:///F:/Repositories/Privacy-Policies/pip.md)
+*   **Update:** Rename/Refine to cover "Universal Auto PiP".
+*   **Detail:** Clarify that the extension can automatically detect media elements to enable Picture-in-Picture mode.
 
 ---
 
 ### [Repository Overview]
 
 #### [MODIFY] [README.md](file:///F:/Repositories/Privacy-Policies/README.md)
-*   Update the "Available Policies" table to include the 6 new entries.
+*   Add **Weather Watcher** to the list.
 
 ## Verification Plan
 
 ### Manual Verification
-*   Verify that all new files follow the consistent formatting used in existing policies (e.g., `pip.md`, `bookmarks.md`).
-*   Ensure the `README.md` links are correct and the descriptions match the GitHub project descriptions.
+*   Verify that `weather-watcher.md` mentions the specific APIs found in the code (`Open-Meteo`, `NWS`).
+*   Ensure the `bookmarks.md` update correctly identifies the favicon service usage.
